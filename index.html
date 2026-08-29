@@ -140,22 +140,32 @@
 			<p>© 2026 RHLS — Rex Hernández Linguistic Services · rhls.softdev@gmail.com</p>
 		</footer>
 
+		<script src="localize/i18n-site.js"></script>
 		<script>
-			// Localized product pages (hub copy stays English for now).
+			// Language selector: hub copy stays English (no hub catalogs yet),
+			// so the selector jumps to the localized product sites. Uses
+			// i18n-site.js's LOCALES table for the option names/order.
 			window.addEventListener("load", function () {
 				var sel = document.getElementById("lang-select");
+				var links = {
+					"es": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=es",
+					"ja": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=ja",
+					"zh-Hans": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=zh-Hans",
+					"zh-Hant": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=zh-Hant",
+					"yue": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=yue",
+					"hi": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=hi",
+					"ar": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=ar",
+					"ko": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=ko"
+				};
+				// populate from the shared LOCALES table (all 9 languages)
+				Object.keys(window.i18n.locales).forEach(function (tag) {
+					var opt = document.createElement("option");
+					opt.value = tag;
+					opt.textContent = window.i18n.locales[tag].name;
+					sel.appendChild(opt);
+				});
 				sel.addEventListener("change", function () {
 					var lang = sel.value;
-					var links = {
-						"es": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=es",
-						"ja": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=ja",
-						"zh-Hans": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=zh-Hans",
-						"zh-Hant": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=zh-Hant",
-						"yue": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=yue",
-						"hi": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=hi",
-						"ar": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=ar",
-						"ko": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=ko"
-					};
 					if (links[lang]) window.location.href = links[lang];
 				});
 			});
