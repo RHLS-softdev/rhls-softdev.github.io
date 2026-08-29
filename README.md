@@ -1,4 +1,4 @@
-# RHLS — Rex Hernández Linguistic Services
+# RHLS — Rex Hernández Language Services
 
 Home hub for the RHLS software collection: language, kitchen, and
 subtitle tools. Live at https://rhls-softdev.github.io/
