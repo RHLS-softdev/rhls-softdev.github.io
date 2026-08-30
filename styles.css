@@ -192,3 +192,11 @@ footer {
 	height: 28px;
 	opacity: 0.85;
 }
+
+/* Sale-polish additions (2026-08-30) — shared sections */
+.download { text-align: center; padding: 48px 24px; max-width: 720px; margin: 0 auto; }
+.download p { color: #5b6472; }
+.muted-note { color: #5b6472; font-size: 0.9rem; margin-top: 12px; }
+.legal-links { margin-top: 10px; font-size: 0.9rem; }
+.legal-links a { color: #0060a0; text-decoration: none; }
+.legal-links a:hover { text-decoration: underline; }
