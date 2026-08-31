@@ -200,3 +200,5 @@ footer {
 .legal-links { margin-top: 10px; font-size: 0.9rem; }
 .legal-links a { color: #0060a0; text-decoration: none; }
 .legal-links a:hover { text-decoration: underline; }
+
+.tag-note { color: #8fa1b8; font-size: 0.8rem; }
