@@ -3,21 +3,21 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>RHLS — Rex Hernández Language Services · Language tools, kitchen management, subtitle software</title>
+		<title>RHLS App Store — Rex Hernández Language Services · download for Linux, Windows &amp; Android</title>
 		<meta
 			name="description"
-			content="RHLS makes language, kitchen, and subtitle tools that are free to start: Lingua Mundi (the Texupan dictionary apps + language API), Shikibu (Japanese EPUB editor), Subtitle Toolkit (SRT tools), and KitchenOS (restaurant kitchen management). Download free apps, buy Pro, subscribe to services."
+			content="The RHLS app store: Texupan (offline six-language dictionary), Shikibu (Japanese EPUB editor), Lingua Mundi Dictionary, Subtitle Toolkit, KitchenOS, Choir Director and Ledgerly. Every app free to start — installers for Linux (.deb), Windows (.exe) and Android (.apk), Pro upgrades and bundles."
 		/>
 		<link rel="icon" type="image/png" href="favicon.png" />
-		<meta property="og:title" content="RHLS — Rex Hernández Language Services" />
-		<meta property="og:description" content="Language tools, kitchen management, and subtitle software. Free apps, Pro upgrades, and API subscriptions." />
+		<meta property="og:title" content="RHLS App Store — free apps for Linux, Windows &amp; Android" />
+		<meta property="og:description" content="Texupan, Shikibu, Lingua Mundi Dictionary, Subtitle Toolkit, KitchenOS, Choir Director and Ledgerly — installers for every platform, free to start." />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://rhls-softdev.github.io/" />
 		<meta property="og:image" content="https://rhls-softdev.github.io/og-image.png" />
-		<meta property="og:site_name" content="RHLS" />
+		<meta property="og:site_name" content="RHLS App Store" />
 		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="RHLS — Rex Hernández Language Services" />
-		<meta name="twitter:description" content="Language tools, kitchen management, and subtitle software. Free apps, Pro upgrades, and API subscriptions." />
+		<meta name="twitter:title" content="RHLS App Store — free apps for Linux, Windows &amp; Android" />
+		<meta name="twitter:description" content="Every app free to start. Linux .deb · Windows .exe · Android .apk." />
 		<meta name="twitter:image" content="https://rhls-softdev.github.io/og-image.png" />
 		<meta name="theme-color" content="#004070" />
 		<link rel="canonical" href="https://rhls-softdev.github.io/" />
@@ -29,21 +29,53 @@
 			"url": "https://rhls-softdev.github.io/",
 			"logo": "https://rhls-softdev.github.io/rhls-logo.png",
 			"email": "rhls.softdev@gmail.com",
-			"brand": ["Lingua Mundi", "Shikibu", "Subtitle Toolkit", "KitchenOS"]
+			"brand": ["Texupan", "Lingua Mundi", "Shikibu", "Subtitle Toolkit", "KitchenOS", "Choir Director", "Ledgerly"]
 		}
 		</script>
 		<link rel="stylesheet" href="styles.css" />
+		<style>
+			/* ---- App-store layout (on top of styles.css) ---- */
+			.store-hero { text-align: center; padding: 40px 16px 8px; }
+			.store-hero h1 { font-size: 2.4rem; margin: 0 0 6px; }
+			.store-hero p { color: var(--muted, #5b6472); max-width: 640px; margin: 0 auto; }
+			.store-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; }
+			.app-card { display: flex; flex-direction: column; background: #fff; border: 1px solid #e2e8f0;
+				border-radius: 14px; padding: 18px; box-shadow: 0 2px 10px rgba(0, 64, 112, 0.06);
+				transition: transform .12s ease, box-shadow .12s ease; }
+			.app-card:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0, 64, 112, 0.12); }
+			.app-card .app-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+			.app-card .app-icon { width: 52px; height: 52px; border-radius: 12px; flex: none; }
+			.app-card h3 { margin: 0; font-size: 1.12rem; }
+			.app-card .app-tag { margin: 0; color: var(--muted, #5b6472); font-size: .88rem; }
+			.app-card .app-desc { flex-grow: 1; margin: 6px 0 12px; font-size: .93rem; color: var(--ink, #101418); }
+			.app-price { font-weight: 700; color: var(--blue-800, #004070); font-size: .92rem; margin: 0 0 12px; }
+			.app-price .free { color: #00703c; }
+			.platforms { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+			.pbtn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--blue-300, #a9c8e0);
+				border-radius: 8px; padding: 6px 10px; font-size: .82rem; font-weight: 600; color: var(--blue-800, #004070);
+				background: #f4f9fd; text-decoration: none; }
+			.pbtn:hover { background: var(--blue-100, #e3eef7); }
+			.pbtn.soon { opacity: .55; cursor: default; border-style: dashed; }
+			.app-card .card-actions { margin-top: auto; }
+			.featured { grid-column: 1 / -1; display: flex; gap: 18px; align-items: center; background: linear-gradient(120deg, #eef5fb, #f8fbfe);
+				border: 1px solid var(--blue-200, #cfe3f2); }
+			.featured .app-icon { width: 84px; height: 84px; border-radius: 18px; }
+			.featured h3 { font-size: 1.5rem; }
+			.badge { display: inline-block; background: #00703c; color: #fff; font-size: .72rem; font-weight: 700;
+				letter-spacing: .05em; text-transform: uppercase; border-radius: 999px; padding: 3px 10px; margin-bottom: 6px; }
+		</style>
 	</head>
 	<body>
 		<header class="topbar">
 			<div class="brand-lockup">
 				<img src="rhls-logo-sm.png" alt="RHLS logo" class="brand-logo" />
 				<span class="brand">RHLS</span>
-				<span class="brand-sub">Rex Hernández Language Services</span>
+				<span class="brand-sub">App Store</span>
 			</div>
 			<nav>
-				<a href="#products">Products</a>
-				<a href="#apps">Free apps</a>
+				<a href="#store">Store</a>
+				<a href="#bundles">Bundles</a>
+				<a href="#downloads">Downloads</a>
 				<a href="#services">Subscribe</a>
 				<a href="#contact">Contact</a>
 			</nav>
@@ -55,170 +87,225 @@
 			</div>
 		</header>
 
-		<section class="hero">
-			<h1>Language, kitchen, and subtitle tools — free to start</h1>
-			<p>
-				RHLS makes practical tools for people who teach, translate, cook, and create:
-				the Lingua Mundi language suite (Texupan dictionary apps + the language API),
-				the Shikibu EPUB editor, Subtitle Toolkit, and KitchenOS. Every app is free to
-				start — Pro upgrades and API subscriptions fund the studio.
-			</p>
-			<div class="hero-actions">
-				<a class="btn btn-primary" href="#apps">Download free apps</a>
-				<a class="btn" href="#services">See subscriptions</a>
-			</div>
+		<section class="store-hero">
+			<h1>The RHLS app store</h1>
+			<p>Language, reading, subtitles, kitchen and finance apps — every one free to start, with installers for
+				<strong>Linux (.deb)</strong>, <strong>Windows (.exe)</strong> and <strong>Android (.apk)</strong>.
+				Pro upgrades and bundles fund the studio; the free tiers never go away.</p>
 		</section>
 
-		<main id="products" class="products">
-			<article class="card">
-				<h2>Lingua Mundi</h2>
-				<p class="tag">The language suite · dictionary apps + API</p>
-				<p>
-					One linguistic-data service, several ways to use it: <strong>Texupan</strong>,
-					the offline six-language dictionary — your own copy, on your devices, no
-					connection needed — <strong>Shikibu</strong>, the EPUB editor for reading and
-					annotating Japanese books with one-click furigana, and the
-					<strong>language API</strong> for developers. Everything traces to real
-					source data (JMdict, WordNet, KANJIDIC2, J-UniMorph) — never a guess.
-					Take the data with you: buy the premium local app, or plug into the API.
-				</p>
-				<div class="card-actions">
-					<a class="btn btn-primary" href="https://rhls-softdev.github.io/lingua-mundi-launch/">Visit Lingua Mundi</a>
-				</div>
-			</article>
+		<main id="store" class="strip">
+			<h2>Our apps</h2>
+			<div class="store-grid">
 
-			<article class="card">
-				<h2>Subtitle Toolkit</h2>
-				<p class="tag">Subtitles, fixed in your browser</p>
-				<p>
-					Shift timing, convert formats, correct drift, censor words, and validate
-					against Netflix, BBC, and WAI style guides — entirely in your browser,
-					your files never leave your device. Pro ($9, one-time) unlocks batch
-					processing, batch video extraction, and saved presets.
-				</p>
-				<div class="card-actions">
-					<a class="btn btn-primary" href="https://rhls-softdev.github.io/subtitle-toolkit-launch/">Visit Subtitle Toolkit</a>
-				</div>
-			</article>
+				<article class="app-card featured" id="texupan">
+					<img class="app-icon" src="icons/texupan.svg" alt="" width="84" height="84" />
+					<div>
+						<span class="badge">Featured · free to start</span>
+						<h3>Texupan</h3>
+						<p class="app-tag">The offline six-language dictionary</p>
+						<p class="app-desc">English, Spanish, Japanese, French, Italian and Portuguese on your device —
+							no connection needed, with optional Lingua Mundi API lookups for the full 330k-lexeme
+							dataset. Localized interface in all six languages.</p>
+						<p class="app-price"><span class="free">Free</span> · part of the Language Bundle ($44)</p>
+						<div class="platforms">
+							<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Core6-Dictionary-0.1.0-linux-amd64.deb">⬇ Linux .deb</a>
+							<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Core6-Dictionary-0.1.0-win64.exe">⬇ Windows .exe</a>
+							<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Core6-0.1.0-android.apk">⬇ Android .apk</a>
+							<a class="pbtn" href="https://github.com/RHLS-softdev/texupan-launch/releases/latest/download/Texupan-0.1.0.zip">⬇ ZIP</a>
+						</div>
+						<div class="card-actions">
+							<a class="btn btn-primary" href="https://rhls-softdev.github.io/texupan-launch/">Visit Texupan</a>
+							<a class="btn" href="https://rhls-softdev.github.io/texupan-launch/app/">Open the app</a>
+						</div>
+					</div>
+				</article>
 
-			<article class="card">
-				<h2>KitchenOS</h2>
-				<p class="tag">Kitchen management, offline-first</p>
-				<p>
-					Recipes, inventory, workflow, and purchasing for restaurants — free, and it
-					works without a connection. Premium ($50/mo per kitchen) adds multi-kitchen
-					sync and supplier ordering.
-				</p>
-				<div class="card-actions">
-					<a class="btn btn-primary" href="https://rhls-softdev.github.io/kitchenos-launch/">Visit KitchenOS</a>
-				</div>
-			</article>
+				<article class="app-card" id="lingua-mundi">
+					<div class="app-head">
+						<img class="app-icon" src="icons/lingua-mundi.svg" alt="" width="52" height="52" />
+						<div><h3>Lingua Mundi Dictionary</h3><p class="app-tag">283k-entry Japanese dictionary, offline</p></div>
+					</div>
+					<p class="app-desc">A full Japanese dictionary — JMdict, KANJIDIC2, Japanese WordNet and more —
+						that works without a connection. Also powers the Lingua Mundi language API for developers.</p>
+					<p class="app-price"><span class="free">Free</span> · Plus $9/mo (dashboard)</p>
+					<div class="platforms">
+						<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Lingua-Mundi-Dictionary-1.0.0-linux-amd64.deb">⬇ Linux .deb</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Lingua-Mundi-Dictionary-1.0.0-win64.exe">⬇ Windows .exe</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Lingua-Mundi-Dictionary-1.0.0-android.apk">⬇ Android .apk</a>
+					</div>
+					<div class="card-actions">
+						<a class="btn btn-primary" href="https://rhls-softdev.github.io/lingua-mundi-launch/">Visit Lingua Mundi</a>
+						<a class="btn" href="https://rhls-softdev.github.io/lingua-mundi-launch/dashboard/">Dashboard</a>
+					</div>
+				</article>
+
+				<article class="app-card" id="shikibu">
+					<div class="app-head">
+						<img class="app-icon" src="icons/shikibu.svg" alt="" width="52" height="52" />
+						<div><h3>Shikibu</h3><p class="app-tag">Japanese EPUB editor with one-click furigana</p></div>
+					</div>
+					<p class="app-desc">Read and annotate Japanese EPUBs with instant furigana and vocabulary
+						glosses, backed by the offline dictionary. Pro adds the full local database.</p>
+					<p class="app-price"><span class="free">Free</span> · Pro (Language Bundle)</p>
+					<div class="platforms">
+						<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Shikibu-1.0.0-linux-amd64.deb">⬇ Linux .deb</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Shikibu-1.0.0-win64.exe">⬇ Windows .exe</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest/download/Shikibu-1.0.0-android.apk">⬇ Android .apk</a>
+					</div>
+					<div class="card-actions">
+						<a class="btn btn-primary" href="https://rhls-softdev.github.io/lingua-mundi-launch/">Visit Shikibu</a>
+					</div>
+				</article>
+
+				<article class="app-card" id="subtitle">
+					<div class="app-head">
+						<img class="app-icon" src="icons/subtitle-toolkit.svg" alt="" width="52" height="52" />
+						<div><h3>Subtitle Toolkit</h3><p class="app-tag">Subtitles, fixed in your browser</p></div>
+					</div>
+					<p class="app-desc">Shift timing, convert formats, correct drift, censor words and validate
+						against Netflix, BBC and WAI style guides — your files never leave your device.</p>
+					<p class="app-price"><span class="free">Free</span> · Pro $9 one-time</p>
+					<div class="platforms">
+						<a class="pbtn" href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0-linux-amd64.deb">⬇ Linux .deb</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0-win64.exe">⬇ Windows .exe</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest/download/Subtitle-Toolkit-0.2.0-android.apk">⬇ Android .apk</a>
+					</div>
+					<div class="card-actions">
+						<a class="btn btn-primary" href="https://rhls-softdev.github.io/subtitle-toolkit-launch/">Visit Subtitle Toolkit</a>
+						<a class="btn" href="https://rhls-softdev.github.io/subtitle-toolkit-launch/app/">Open the app</a>
+					</div>
+				</article>
+
+				<article class="app-card" id="kitchen">
+					<div class="app-head">
+						<img class="app-icon" src="icons/kitchenos.svg" alt="" width="52" height="52" />
+						<div><h3>KitchenOS</h3><p class="app-tag">Kitchen management, offline-first</p></div>
+					</div>
+					<p class="app-desc">Recipes, inventory, workflow and purchasing for restaurants — free and
+						works without a connection. Premium adds multi-kitchen sync and supplier ordering.</p>
+					<p class="app-price"><span class="free">Free</span> · Premium $50/mo per kitchen</p>
+					<div class="platforms">
+						<a class="pbtn" href="https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-0.6.0-linux-amd64.deb">⬇ Linux .deb</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-0.6.0-win64.exe">⬇ Windows .exe</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/kitchenos-launch/releases/latest/download/KitchenOS-Premium-0.6.0-android.apk">⬇ Android .apk</a>
+					</div>
+					<div class="card-actions">
+						<a class="btn btn-primary" href="https://rhls-softdev.github.io/kitchenos-launch/">Visit KitchenOS</a>
+						<a class="btn" href="https://rhls-softdev.github.io/kitchenos-launch/premium/">Premium app</a>
+					</div>
+				</article>
+
+				<article class="app-card" id="choir">
+					<div class="app-head">
+						<img class="app-icon" src="icons/choir-director.svg" alt="" width="52" height="52" />
+						<div><h3>Choir Director (Toscanini)</h3><p class="app-tag">Score viewer, playback, rehearsal projects</p></div>
+					</div>
+					<p class="app-desc">A desktop companion for choir and ensemble directors: PDF scores,
+						section markers, A/B looped rehearsal, parts view — bilingual English/Spanish.</p>
+					<p class="app-price"><span class="free">Free</span> · Pro $19 one-time · Studio $9/mo</p>
+					<div class="platforms">
+						<a class="pbtn" href="https://github.com/RHLS-softdev/toscanini-launch/releases/latest/download/choir-director_1.0.0_amd64.deb">⬇ Linux .deb</a>
+						<span class="pbtn soon" title="Shipping with the Rust rebuild">Windows .exe — coming</span>
+						<span class="pbtn soon" title="Shipping with the Rust rebuild">Android .apk — coming</span>
+					</div>
+					<div class="card-actions">
+						<a class="btn btn-primary" href="https://rhls-softdev.github.io/toscanini-launch/">Visit Choir Director</a>
+					</div>
+				</article>
+
+				<article class="app-card" id="ledgerly">
+					<div class="app-head">
+						<img class="app-icon" src="icons/ledgerly.svg" alt="" width="52" height="52" />
+						<div><h3>Ledgerly</h3><p class="app-tag">Money, made visible</p></div>
+					</div>
+					<p class="app-desc">A lightweight financial tracker for young entrepreneurs and artists:
+						salary, side gigs, expenses, transaction notifications and receipt OCR.</p>
+					<p class="app-price"><span class="free">Free</span></p>
+					<div class="platforms">
+						<a class="pbtn" href="https://rhls-softdev.github.io/ledgerly-launch/app/">🌐 Web app</a>
+						<a class="pbtn" href="https://github.com/RHLS-softdev/ledgerly-launch/releases/latest/download/Ledgerly-0.1.0.zip">⬇ ZIP</a>
+					</div>
+					<div class="card-actions">
+						<a class="btn btn-primary" href="https://rhls-softdev.github.io/ledgerly-launch/">Visit Ledgerly</a>
+						<a class="btn" href="https://rhls-softdev.github.io/ledgerly-launch/app/">Open the app</a>
+					</div>
+				</article>
+
+			</div>
 		</main>
 
-<style> below. Palette matches styles.css vars
-     (deep blue #004070 family) with fallbacks.
-     Swap the # hrefs for Stripe checkout / dashboard links when wired.
-     ============================================================ -->
+		<section id="bundles" class="strip bundles">
+			<h2>Bundles — own everything, or subscribe to it all</h2>
+			<p class="bundles-intro">
+				Buy once and own it forever, or subscribe to the whole language stack on one bill.
+				Either way, the bundle works out to roughly 30–35% cheaper than buying the pieces separately.
+			</p>
+			<div class="products bundle-grid">
+				<article class="card bundle-card">
+					<h3>Language Bundle</h3>
+					<p class="tag">Shikibu Pro + Texupan</p>
+					<p class="bundle-price">$44 <span class="period">one-time</span></p>
+					<p class="bundle-worth">Normally <s>$65</s></p>
+					<p class="bundle-save">Save $21 · 32% off</p>
+					<ul class="bundle-list">
+						<li>Texupan — the six-language offline dictionary, your own copy, on your devices</li>
+						<li>Shikibu Pro: one-click furigana and vocabulary annotations in any Japanese EPUB</li>
+						<li>Pay once. Keep it forever. Free updates and re-downloads.</li>
+					</ul>
+					<div class="card-actions">
+						<a class="btn btn-primary bundle-cta" href="https://buy.stripe.com/fZu9AT21FgW45QKgdx6AM02" data-price-id="price_1UA08YHWfIhAnbX53pvmQO1e">Get the Language Bundle — $44</a>
+					</div>
+				</article>
+				<article class="card bundle-card bundle-featured">
+					<span class="bundle-badge">Best value</span>
+					<h3>Complete Bundle</h3>
+					<p class="tag">Everything we make, yours forever</p>
+					<p class="bundle-price">$49 <span class="period">one-time</span></p>
+					<p class="bundle-worth">Normally <s>$74</s></p>
+					<p class="bundle-save">Save $25 · 34% off</p>
+					<ul class="bundle-list">
+						<li>Everything in the Language Bundle, plus Subtitle Toolkit Pro</li>
+						<li>Batch-process entire folders of subtitles — owned, not rented</li>
+						<li>All one-time products in a single payment, on a single account</li>
+					</ul>
+					<div class="card-actions">
+						<a class="btn btn-primary bundle-cta" href="https://buy.stripe.com/3cI8wP9u70X64MGf9t6AM00" data-price-id="price_1UA08VHWfIhAnbX5WGSrPmQi">Own it forever — $49</a>
+					</div>
+				</article>
+				<article class="card bundle-card">
+					<h3>Creator Bundle</h3>
+					<p class="tag">API keys + every subscription, one bill</p>
+					<p class="bundle-price">$19 <span class="period">/ month</span></p>
+					<p class="bundle-worth">Normally <s>$29/mo</s></p>
+					<p class="bundle-save">Save $10/mo · 34% off</p>
+					<ul class="bundle-list">
+						<li>Lingua Mundi API Pro with API keys and higher limits</li>
+						<li>Shikibu Pro + Texupan, cloud-synced across devices</li>
+						<li>Cancel anytime — the things you bought outright stay yours</li>
+					</ul>
+					<div class="card-actions">
+						<a class="btn btn-primary bundle-cta" href="https://buy.stripe.com/dRm4gz8q349i5QKaTd6AM01" data-price-id="price_1UA08WHWfIhAnbX5dlW0PNai">Subscribe — $19/mo</a>
+					</div>
+				</article>
+			</div>
+			<p class="bundle-note">
+				KitchenOS Premium is billed per kitchen and isn't part of these bundles — multi-kitchen teams
+				can ask about volume pricing at rhls.softdev@gmail.com. Every product still has a free tier;
+				nothing here takes that away. Have a gift card? Enter its code at the checkout — it applies automatically.
+			</p>
+		</section>
 
-<style>
-  /* Bundles section — scoped extras on top of the hub stylesheet */
-  .bundles { max-width: 1040px; }
-  .bundles-intro { color: var(--muted, #5b6472); max-width: 640px; margin: 0 auto 8px; }
-  .bundle-grid { align-items: stretch; }
-  .bundle-card { display: flex; flex-direction: column; border-top: 4px solid var(--blue-800, #004070); }
-  .bundle-featured { border-top-color: var(--blue-600, #0060a0); box-shadow: 0 6px 20px rgba(0, 64, 112, 0.12); }
-  .bundle-badge { display: inline-block; background: var(--blue-800, #004070); color: #fff;
-    font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
-    border-radius: 999px; padding: 3px 10px; margin-bottom: 10px; }
-  .bundle-price { font-size: 2.1rem; font-weight: 800; color: var(--blue-900, #003060); margin: 8px 0 2px; }
-  .bundle-price .period { font-size: 0.95rem; font-weight: 600; color: var(--muted, #5b6472); }
-  .bundle-worth { color: var(--muted, #5b6472); font-size: 0.95rem; margin: 0 0 2px; }
-  .bundle-worth s { color: #9aa3af; }
-  .bundle-save { display: inline-block; background: var(--blue-100, #e3eef7); color: var(--blue-800, #004070);
-    font-weight: 700; font-size: 0.85rem; border-radius: 6px; padding: 2px 10px; margin: 6px 0 12px; }
-  .bundle-list { padding-left: 20px; color: var(--ink, #101418); margin: 0 0 18px; flex-grow: 1; }
-  .bundle-list li { margin-bottom: 8px; }
-  .bundle-note { color: var(--muted, #5b6472); font-size: 0.9rem; max-width: 720px;
-    margin: 20px auto 0; text-align: center; }
-</style>
-<section id="bundles" class="strip bundles">
-  <h2>Bundles — own everything, or subscribe to it all</h2>
-  <p class="bundles-intro">
-    Buy once and own it forever, or subscribe to the whole language stack
-    on one bill. Either way, the bundle works out to roughly 30–35% cheaper
-    than buying the pieces separately.
-  </p>
-
-  <div class="products bundle-grid">
-    <!-- Language Bundle -->
-    <article class="card bundle-card">
-      <h3>Language Bundle</h3>
-      <p class="tag">Shikibu Pro + Texupan</p>
-      <p class="bundle-price">$44 <span class="period">one-time</span></p>
-      <p class="bundle-worth">Normally <s>$65</s></p>
-      <p class="bundle-save">Save $21 · 32% off</p>
-      <ul class="bundle-list">
-        <li>Texupan — the six-language offline dictionary, your own copy, on your devices, no connection needed</li>
-        <li>Shikibu Pro: one-click furigana and vocabulary annotations in any Japanese EPUB</li>
-        <li>Pay once. Keep it forever. Free updates and re-downloads.</li>
-      </ul>
-      <div class="card-actions">
-        <a class="btn btn-primary bundle-cta" href="https://buy.stripe.com/fZu9AT21FgW45QKgdx6AM02" data-price-id="price_1UA08YHWfIhAnbX53pvmQO1e">Get the Language Bundle — $44</a>
-      </div>
-    </article>
-
-    <!-- Complete Bundle (featured) -->
-    <article class="card bundle-card bundle-featured">
-      <span class="bundle-badge">Best value</span>
-      <h3>Complete Bundle</h3>
-      <p class="tag">Everything we make, yours forever</p>
-      <p class="bundle-price">$49 <span class="period">one-time</span></p>
-      <p class="bundle-worth">Normally <s>$74</s></p>
-      <p class="bundle-save">Save $25 · 34% off</p>
-      <ul class="bundle-list">
-        <li>Everything in the Language Bundle, plus Subtitle Toolkit Pro</li>
-        <li>Batch-process entire folders of subtitles — owned, not rented</li>
-        <li>All one-time products in a single payment, on a single account</li>
-      </ul>
-      <div class="card-actions">
-        <a class="btn btn-primary bundle-cta" href="https://buy.stripe.com/3cI8wP9u70X64MGf9t6AM00" data-price-id="price_1UA08VHWfIhAnbX5WGSrPmQi">Own it forever — $49</a>
-      </div>
-    </article>
-
-    <!-- Creator Bundle -->
-    <article class="card bundle-card">
-      <h3>Creator Bundle</h3>
-      <p class="tag">API keys + every subscription, one bill</p>
-      <p class="bundle-price">$19 <span class="period">/ month</span></p>
-      <p class="bundle-worth">Normally <s>$29/mo</s></p>
-      <p class="bundle-save">Save $10/mo · 34% off</p>
-      <ul class="bundle-list">
-        <li>Lingua Mundi API Pro with API keys and higher limits</li>
-        <li>Shikibu Pro + Texupan, cloud-synced across devices</li>
-        <li>Cancel anytime — the things you bought outright stay yours</li>
-      </ul>
-      <div class="card-actions">
-        <a class="btn btn-primary bundle-cta" href="https://buy.stripe.com/dRm4gz8q349i5QKaTd6AM01" data-price-id="price_1UA08WHWfIhAnbX5dlW0PNai">Subscribe — $19/mo</a>
-      </div>
-    </article>
-  </div>
-
-  <p class="bundle-note">
-    KitchenOS Premium is billed per kitchen and isn't part of these bundles —
-    multi-kitchen teams can ask about volume pricing at rhls.softdev@gmail.com.
-    Every product still has a free tier; nothing here takes that away.
-    Have a gift card? Enter its code at the checkout — it applies automatically.
-  </p>
-</section>
-
-
-		<section id="apps" class="strip">
-			<h2>Free apps — download now</h2>
-			<p>Every product is free to start. Grab the installers, the source, or the Android companion APKs.</p>
+		<section id="downloads" class="strip">
+			<h2>Downloads — all releases</h2>
+			<p>Every installer lives on GitHub Releases: <strong>Linux .deb · Windows .exe · Android .apk · ZIP</strong>.</p>
 			<ul class="links">
-				<li><a href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest">Subtitle Toolkit — Windows .exe · Linux .deb · Android APK · ZIP</a></li>
-				<li><a href="https://github.com/RHLS-softdev/kitchenos-launch/releases/latest">KitchenOS — Linux .deb · Windows .exe · Android APK · source</a></li>
-				<li><a href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest">Lingua Mundi / Shikibu — Windows .exe · Linux .deb · Android APK · ZIP</a></li>
+				<li><a href="https://github.com/RHLS-softdev/subtitle-toolkit-launch/releases/latest">Subtitle Toolkit — .deb · .exe · .apk · ZIP</a></li>
+				<li><a href="https://github.com/RHLS-softdev/kitchenos-launch/releases/latest">KitchenOS — .deb · .exe · .apk · source</a></li>
+				<li><a href="https://github.com/RHLS-softdev/lingua-mundi-launch/releases/latest">Lingua Mundi / Shikibu / Texupan — .deb · .exe · .apk · ZIP</a></li>
+				<li><a href="https://github.com/RHLS-softdev/texupan-launch/releases/latest">Texupan — app ZIP</a></li>
+				<li><a href="https://github.com/RHLS-softdev/toscanini-launch/releases/latest">Choir Director — Linux .deb (Windows &amp; Android with the Rust rebuild)</a></li>
+				<li><a href="https://github.com/RHLS-softdev/ledgerly-launch/releases/latest">Ledgerly — app ZIP</a></li>
 			</ul>
 		</section>
 
@@ -229,6 +316,20 @@
 				<li><a href="https://rhls-softdev.github.io/lingua-mundi-launch/dashboard/">Lingua Mundi dashboard — API plans &amp; keys</a></li>
 				<li><a href="https://rhls-softdev.github.io/subtitle-toolkit-launch/app/">Subtitle Toolkit app — Get Pro</a></li>
 				<li><a href="https://rhls-softdev.github.io/kitchenos-launch/premium/">KitchenOS Premium app</a></li>
+			</ul>
+		</section>
+
+		<section id="sites" class="strip">
+			<h2>Launch pages &amp; docs</h2>
+			<ul class="links">
+				<li><a href="https://rhls-softdev.github.io/lingua-mundi-launch/">Lingua Mundi launch</a></li>
+				<li><a href="https://rhls-softdev.github.io/texupan-launch/">Texupan launch (+ app)</a></li>
+				<li><a href="https://rhls-softdev.github.io/subtitle-toolkit-launch/">Subtitle Toolkit launch</a></li>
+				<li><a href="https://rhls-softdev.github.io/kitchenos-launch/">KitchenOS launch</a></li>
+				<li><a href="https://rhls-softdev.github.io/toscanini-launch/">Toscanini launch</a></li>
+				<li><a href="https://rhls-softdev.github.io/ledgerly-launch/">Ledgerly launch (+ app)</a></li>
+				<li><a href="https://github.com/RHLS-softdev/chen-baaxal">Chén Báaxal spec</a></li>
+				<li><a href="https://github.com/RHLS-softdev/xokbil">Xokbil repo</a></li>
 			</ul>
 		</section>
 
@@ -245,9 +346,8 @@
 
 		<script src="localize/i18n-site.js"></script>
 		<script>
-			// Language selector: hub copy stays English (no hub catalogs yet),
-			// so the selector jumps to the localized product sites. Uses
-			// i18n-site.js's LOCALES table for the option names/order.
+			// Language selector: hub copy stays English; localized product
+			// sites are linked directly. Uses i18n-site.js's LOCALES table.
 			window.addEventListener("load", function () {
 				var sel = document.getElementById("lang-select");
 				var links = {
@@ -260,7 +360,6 @@
 					"ar": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=ar",
 					"ko": "https://rhls-softdev.github.io/subtitle-toolkit-launch/?lang=ko"
 				};
-				// populate from the shared LOCALES table (all 9 languages)
 				Object.keys(window.i18n.locales).forEach(function (tag) {
 					var opt = document.createElement("option");
 					opt.value = tag;
