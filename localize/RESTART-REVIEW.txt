@@ -1,0 +1,20 @@
+# Machine-translation review list — human quality pass
+
+
+== es: 0 translated, 0 kept EN
+
+== fr: 0 translated, 0 kept EN
+
+== it: 0 translated, 0 kept EN
+
+== pt: 0 translated, 0 kept EN
+
+== ja: 0 translated, 0 kept EN
+
+== ko: 0 translated, 0 kept EN
+
+== zh-Hans: 0 translated, 0 kept EN
+
+== zh-Hant: 0 translated, 0 kept EN
+
+== ar: 0 translated, 0 kept EN
