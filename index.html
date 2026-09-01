@@ -35,12 +35,12 @@
 		<link rel="stylesheet" href="styles.css" />
 		<style>
 			/* ---- App-store layout (on top of styles.css) ---- */
-			.store-hero { text-align: center; padding: 40px 16px 8px; }
+			.store-hero { text-align: center; padding: 32px 16px 8px; }
 			/* ---- App-store layout (2026-09-01 redesign: the studio identity —
 			     navy & brass, serif display, function-first) ---- */
 			:root { --gold: #c9a45c; --gold-dim: #8a6f3c; --navy: #0b1f33; --navy-2: #12293f;
-				--paper: #faf8f3; --card: #ffffff; --line: #e6e1d4; }
-			.store-hero { position: relative; text-align: center; padding: 72px 20px 40px; color: #f4efe2;
+				--paper: #faf8f3; --card: #ffffff; --line: #c8c3b6; }
+			.store-hero { position: relative; text-align: center; padding: 32px 20px 40px; color: #f4efe2;
 				background:
 					radial-gradient(900px 380px at 50% -10%, rgba(201,164,92,.28), transparent 60%),
 					linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%);
@@ -52,41 +52,41 @@
 				font-weight: 500; letter-spacing: .01em; margin: 0 0 10px; color: #fff; }
 			.store-hero h1::after { content: ""; display: block; width: 64px; height: 2px; margin: 16px auto 0;
 				background: linear-gradient(90deg, transparent, var(--gold), transparent); }
-			.store-hero p { color: #c9d4e0; max-width: 680px; margin: 14px auto 0; font-size: 1.05rem; line-height: 1.6; }
+			.store-hero p { color: #c9d4e0; max-width: 680px; margin: 12px auto 0; font-size: 1.05rem; line-height: 1.6; }
 			.store-hero p strong { color: var(--gold); font-weight: 600; }
-			.store-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+			.store-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
 			.app-card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line);
-				border-radius: 16px; padding: 22px; box-shadow: 0 1px 0 rgba(11,31,51,.04), 0 12px 28px -18px rgba(11,31,51,.25);
+				border-radius: 16px; padding: 24px; box-shadow: 0 1px 0 rgba(11,31,51,.04), 0 12px 28px -18px rgba(11,31,51,.25);
 				transition: transform .14s ease, box-shadow .14s ease, border-color .14s ease; position: relative; }
 			.app-card::before { content: ""; position: absolute; top: 0; left: 24px; right: 24px; height: 2px;
 				background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: 0; transition: opacity .14s ease; }
 			.app-card:hover { transform: translateY(-3px); border-color: #d8cfba;
 				box-shadow: 0 2px 0 rgba(11,31,51,.05), 0 22px 44px -20px rgba(11,31,51,.35); }
 			.app-card:hover::before { opacity: 1; }
-			.app-card .app-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+			.app-card .app-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
 			.app-card .app-icon { width: 52px; height: 52px; border-radius: 13px; flex: none; background: #f3efe4;
-				padding: 6px; box-shadow: inset 0 0 0 1px rgba(138,111,60,.18); }
+				padding: 4px; box-shadow: inset 0 0 0 1px rgba(138,111,60,.18); }
 			.app-card h3 { margin: 0; font-size: 1.12rem; font-family: Georgia, serif; font-weight: 600; letter-spacing: .01em; }
 			.app-card .app-tag { margin: 2px 0 0; color: var(--muted, #5b6472); font-size: .85rem; }
 			.app-card .app-desc { flex-grow: 1; margin: 8px 0 14px; font-size: .92rem; line-height: 1.55; color: var(--ink, #101418); }
 			.app-price { font-weight: 700; color: var(--blue-800, #004070); font-size: .92rem; margin: 0 0 12px; }
 			.app-price .free { color: #00703c; }
-			.platforms { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-			.pbtn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #cdc4ad; border-radius: 9px;
-				padding: 7px 11px; font-size: .8rem; font-weight: 600; color: var(--blue-800, #004070);
-				background: #faf8f2; text-decoration: none; transition: all .12s ease; }
+			.platforms { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+			.pbtn { display: inline-flex; align-items: center; gap: 4px; border: 1px solid #cdc4ad; border-radius: 9px;
+				padding: 8px 11px; font-size: .8rem; font-weight: 600; color: var(--blue-800, #004070);
+				background: #faf8f2; text-decoration: none; transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease, background-color .12s ease, opacity .12s ease; }
 			.pbtn:hover { background: var(--navy); color: var(--gold); border-color: var(--navy); }
 			.pbtn.soon { opacity: .5; cursor: default; border-style: dashed; }
 			.pbtn.soon:hover { background: #faf8f2; color: var(--blue-800, #004070); border-color: #cdc4ad; }
 			.app-card .card-actions { margin-top: auto; display: flex; gap: 8px; flex-wrap: wrap; }
-			.featured { grid-column: 1 / -1; display: flex; gap: 22px; align-items: center; padding: 26px;
+			.featured { grid-column: 1 / -1; display: flex; gap: 24px; align-items: center; padding: 24px;
 				background: linear-gradient(120deg, #fdfbf5, #f6f1e3); border-color: #d8cfba; }
 			.featured .app-icon { width: 84px; height: 84px; border-radius: 20px; }
 			.featured h3 { font-size: 1.55rem; }
 			.badge { display: inline-block; background: var(--navy); color: var(--gold); font-size: .7rem; font-weight: 700;
 				letter-spacing: .08em; text-transform: uppercase; border-radius: 999px; padding: 4px 12px; margin-bottom: 8px; }
 			.strip h2 { font-family: Georgia, serif; font-size: 1.7rem; font-weight: 600; color: var(--navy);
-				display: flex; align-items: center; gap: 14px; margin: 0 0 18px; }
+				display: flex; align-items: center; gap: 12px; margin: 0 0 18px; }
 			.strip h2::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--gold), transparent); }
 			.topbar { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(10px);
 				background: rgba(250,248,243,.9); border-bottom: 1px solid var(--line); }
@@ -97,17 +97,21 @@
 			.btn { border-radius: 9px; }
 			.btn-primary { background: var(--navy); border-color: var(--navy); color: var(--gold); }
 			.btn-primary:hover { background: #16334e; }
-			.legal-links { text-align: center; color: var(--muted); font-size: .85rem; padding: 26px 16px 34px; }
+			.legal-links { text-align: center; color: var(--muted); font-size: .85rem; padding: 24px 16px 34px; }
 			.legal-links a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
 			.legal-links a:hover { color: var(--blue-800, #004070); }
 			@media (max-width: 720px) {
 				.featured { flex-direction: column; text-align: center; }
-				.store-hero { padding: 52px 16px 30px; }
-				.topbar { flex-wrap: wrap; gap: 10px; padding: 10px 14px; }
+				.store-hero { padding: 32px 16px 30px; }
+				.topbar { flex-wrap: wrap; gap: 8px; padding: 8px 14px; }
 				.topbar nav { order: 3; width: 100%; margin-left: 0; justify-content: center; flex-wrap: wrap; gap: 12px; }
 				.brand-sub { display: none; }
 			}
-		</style>
+		
+.pbtn, .cta { font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+:focus-visible { outline: 2px solid var(--accent, #3366cc); outline-offset: 2px; }
+.pbtn, .cta { font-weight: 700; }</style>
 	</head>
 	<body>
 		<header class="topbar">
@@ -424,5 +428,6 @@
 				});
 			});
 		</script>
-	</body>
+	<div role="status" aria-live="polite" class="edna-live" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);"></div>
+</body>
 </html>
