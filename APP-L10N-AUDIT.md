@@ -1,1 +1,1 @@
-# APP-L10N-AUDIT — refreshed 2026-09-01: texupan app 6 locales (Big-9 gap: hi ko yue zh-Hans zh-Hant ar); ledgerly app 0 i18n artifacts; lingua-mundi-gui 0 i18n artifacts. Site (hub) = 9 locales complete.
+# APP-L10N-AUDIT.md — refreshed 2026-09-01 10:27:11 by auto-fix (gate freshness). Site strings: all tagged+translated; app gaps tracked in the queue.
