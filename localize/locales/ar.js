@@ -32,4 +32,12 @@ window.__I18N_CATALOG__({
  'hub.contact.title': 'اتصل بنا',
  'hub.footer.legal': '© 2026 Raciel Hernández Hernández · RHLS — Rex Hernández Language Services · rhls.softdev@gmail.com',
  'hub.flavour': 'بُني في كهف، بصندوق من الخردة!',
+ 'hub.about.nav': '#TODO# About me',
+ 'hub.cv.nav': '#TODO# CV',
+ 'hub.contact.nav': '#TODO# Contact',
+ 'hub.about.h1': '#TODO# ¡Hola, soy Rex!',
+ 'hub.about.whoami': '#TODO# Raciel Hernández (Rex) · language teacher · translator · creator',
+ 'hub.contact.h1': '#TODO# Contact',
+ 'hub.contact.support': '#TODO# Support request',
+ 'hub.cv.h1': '#TODO# CV / Résumé',
 });

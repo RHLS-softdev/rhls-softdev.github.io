@@ -31,4 +31,12 @@ window.__I18N_CATALOG__({
  'hub.contact.title': 'Contact',
  'hub.footer.legal': '© 2026 Raciel Hernández Hernández · RHLS — Rex Hernández Language Services · rhls.softdev@gmail.com',
  'hub.flavour': 'Built in a cave, with a box of scraps.',
+ 'hub.about.nav': 'About me',
+ 'hub.cv.nav': 'CV',
+ 'hub.contact.nav': 'Contact',
+ 'hub.about.h1': '¡Hola, soy Rex!',
+ 'hub.about.whoami': 'Raciel Hernández (Rex) · language teacher · translator · creator',
+ 'hub.contact.h1': 'Contact',
+ 'hub.contact.support': 'Support request',
+ 'hub.cv.h1': 'CV / Résumé',
 });
