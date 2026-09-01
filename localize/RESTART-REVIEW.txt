@@ -1,20 +1,56 @@
 # Machine-translation review list — human quality pass
 
+[es] UNTRANSLATED: hub.app.chenbaaxal.name = Chén Báaxal
 
-== es: 0 translated, 0 kept EN
+== es: 2 translated, 1 kept EN
+  hub.app.chenbaaxal.name: Chén Báaxal
+[fr] UNTRANSLATED: hub.app.chenbaaxal.desc = Turns a 3D model into 2D sewing panels for plush toys and cr
+[fr] UNTRANSLATED: hub.app.chenbaaxal.tag = Plush-toy pattern mapper
 
-== fr: 0 translated, 0 kept EN
+== fr: 1 translated, 2 kept EN
+  hub.app.chenbaaxal.desc: Turns a 3D model into 2D sewing panels for plush toys and crafters — f
+  hub.app.chenbaaxal.name: Chén Báaxal
+  hub.app.chenbaaxal.tag: Plush-toy pattern mapper
+[it] UNTRANSLATED: hub.app.chenbaaxal.desc = Turns a 3D model into 2D sewing panels for plush toys and cr
+[it] UNTRANSLATED: hub.app.chenbaaxal.name = Chén Báaxal
+[it] UNTRANSLATED: hub.app.chenbaaxal.tag = Plush-toy pattern mapper
 
-== it: 0 translated, 0 kept EN
+== it: 0 translated, 3 kept EN
+  hub.app.chenbaaxal.desc: Turns a 3D model into 2D sewing panels for plush toys and crafters — f
+  hub.app.chenbaaxal.name: Chén Báaxal
+  hub.app.chenbaaxal.tag: Plush-toy pattern mapper
+[pt] UNTRANSLATED: hub.app.chenbaaxal.name = Chén Báaxal
 
-== pt: 0 translated, 0 kept EN
+== pt: 2 translated, 1 kept EN
+  hub.app.chenbaaxal.name: Chén Báaxal
+[ja] UNTRANSLATED: hub.app.chenbaaxal.name = Chén Báaxal
+[ja] UNTRANSLATED: hub.app.chenbaaxal.tag = Plush-toy pattern mapper
 
-== ja: 0 translated, 0 kept EN
+== ja: 1 translated, 2 kept EN
+  hub.app.chenbaaxal.name: Chén Báaxal
+  hub.app.chenbaaxal.tag: Plush-toy pattern mapper
+[ko] UNTRANSLATED: hub.app.chenbaaxal.tag = Plush-toy pattern mapper
 
-== ko: 0 translated, 0 kept EN
+== ko: 2 translated, 1 kept EN
+  hub.app.chenbaaxal.tag: Plush-toy pattern mapper
+[zh-Hans] UNTRANSLATED: hub.app.chenbaaxal.desc = Turns a 3D model into 2D sewing panels for plush toys and cr
+[zh-Hans] UNTRANSLATED: hub.app.chenbaaxal.tag = Plush-toy pattern mapper
 
-== zh-Hans: 0 translated, 0 kept EN
+== zh-Hans: 1 translated, 2 kept EN
+  hub.app.chenbaaxal.desc: Turns a 3D model into 2D sewing panels for plush toys and crafters — f
+  hub.app.chenbaaxal.name: Chén Báaxal
+  hub.app.chenbaaxal.tag: Plush-toy pattern mapper
+[zh-Hant] UNTRANSLATED: hub.app.chenbaaxal.desc = Turns a 3D model into 2D sewing panels for plush toys and cr
+[zh-Hant] UNTRANSLATED: hub.app.chenbaaxal.name = Chén Báaxal
+[zh-Hant] UNTRANSLATED: hub.app.chenbaaxal.tag = Plush-toy pattern mapper
 
-== zh-Hant: 0 translated, 0 kept EN
+== zh-Hant: 0 translated, 3 kept EN
+  hub.app.chenbaaxal.desc: Turns a 3D model into 2D sewing panels for plush toys and crafters — f
+  hub.app.chenbaaxal.name: Chén Báaxal
+  hub.app.chenbaaxal.tag: Plush-toy pattern mapper
+[ar] UNTRANSLATED: hub.app.chenbaaxal.desc = Turns a 3D model into 2D sewing panels for plush toys and cr
+[ar] UNTRANSLATED: hub.app.chenbaaxal.name = Chén Báaxal
 
-== ar: 0 translated, 0 kept EN
+== ar: 1 translated, 2 kept EN
+  hub.app.chenbaaxal.desc: Turns a 3D model into 2D sewing panels for plush toys and crafters — f
+  hub.app.chenbaaxal.name: Chén Báaxal
