@@ -50,7 +50,14 @@
   function apply() {
     document.documentElement.lang = current;
     document.documentElement.dir = LOCALES[current].dir;
-    document.title = t("meta.title") || document.title;
+    if (catalog && Object.prototype.hasOwnProperty.call(catalog, "meta.title")) {
+      document.title = t("meta.title");
+    }
+    // keep any lang-select in sync with the ACTIVE locale (2026-09-01 fix:
+    // the dropdown always showed the first option, e.g. "English", even when
+    // the page was rendered in Spanish — switching looked like it did nothing)
+    var sel = document.getElementById("lang-select");
+    if (sel && sel.options.length) sel.value = current;
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var v = t(el.getAttribute("data-i18n"));
       if (v) el.textContent = v;
