@@ -41,7 +41,7 @@ English-first. Everything below is live right now.</p>
 <h2>3. Pricing (English-first, launch)</h2>
 <table><tr><th>Tier</th><th>Price</th><th>What you get</th></tr>
 <tr><td>Free</td><td>$0</td><td>rate-limited API + openapi.json, 1 driver</td></tr>
-<tr><td>Agent</td><td>$9/mo</td><td>full API, all 4 drivers, 10k calls/mo</td></tr>
+<tr><td>Agent</td><td>$9/mo + $0.001/call over 10k</td><td>full API, all 4 drivers, 10k calls/mo included (hybrid pricing — pay-per-call overage, machine-settled)</td></tr>
 <tr><td>Fleet</td><td>custom</td><td>corporate: lexicon dumps, SLAs, self-host kits</td></tr></table>
 <p><a class="btn" href="https://buy.stripe.com/3cI8wP9u70X64MGf9t6AM00">Get an agent key — $9/mo</a></p>
 
@@ -51,6 +51,8 @@ English-first. Everything below is live right now.</p>
 <li><b>Offline:</b> the whole stack runs on a laptop — no vendor lock, no data exfiltration.</li>
 <li><b>MIT core:</b> the Rust core and this page's stack are open source (see the repo).</li>
 <li><b>Verifiable:</b> every release passes a dual adversarial audit (see the store).</li>
+<li><b>Governance-ready:</b> spend caps, human-approval mode and audit trails on every action (the approval gate) — built for enterprise agent security.</li>
+<li><b>Machine-payable:</b> the API speaks the x402 pattern — HTTP 402 with a payment requirement when quota is met (settlement providers: LemonCake fiat / x402 USDC on request).</li>
 </ul>
 <p style="margin-top:2em">Questions or a corporate pilot? <a href="contact.html">Contact Rex</a>.</p>
 </div></body></html>
