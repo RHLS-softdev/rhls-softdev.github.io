@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://rhls-softdev.github.io/sitemap.xml

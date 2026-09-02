@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RHLS — for agents & developers</title>
+<meta name="description" content="Callable APIs and deterministic drivers from Rex Hernández Language Services: Lingua Mundi lexicon API, offline OCR, grammar, translation. English-first, MIT core, $0 to start.">
+<style>
+:root{--ink:#2b2118;--paper:#fdfaf3;--card:#fff;--accent:#8a6d3b;--line:#d8cfc0}
+*{box-sizing:border-box}body{font-family:system-ui,sans-serif;background:var(--paper);color:var(--ink);margin:0;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding:2rem 1.2rem}
+h1{font-size:1.9rem;margin:.2em 0}h2{margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.3em}
+code{background:#f1eadb;padding:.15em .4em;border-radius:4px;font-size:.92em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem 1.2rem;margin:.8rem 0}
+table{width:100%;border-collapse:collapse;margin:.8rem 0}td,th{border:1px solid var(--line);padding:.5em;text-align:left}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6em 1.2em;border-radius:8px;text-decoration:none;font-weight:700}
+a{color:var(--accent)}.nav a{margin-right:1em;color:var(--ink)}
+</style></head>
+<body><div class="wrap">
+<p class="nav"><a href="index.html">Store</a> <a href="about.html">About</a> <a href="contact.html">Contact</a></p>
+<h1>RHLS — for agents &amp; developers</h1>
+<p>Deterministic, offline-first services you can call from code or an agent loop.
+English-first. Everything below is live right now.</p>
+
+<h2>1. Lingua Mundi lexicon API</h2>
+<div class="card">
+<p><b>Base:</b> <code>https://api.rhls.dev</code> (or self-host — MIT core)</p>
+<p><b>Endpoints:</b> <code>/analyze?text=cat&amp;language=eng</code> · <code>/kanji?q=水</code> ·
+<code>/graph/sky</code> (concept sky: 220 stars, edges, per-language words) · <code>/openapi.json</code></p>
+<p><b>Corpus:</b> 561k+ lexemes, 810k+ senses, Japanese 283k / English 47k / Spanish + others (imports running).</p>
+<p><b>Read-class</b> (Observe-mode safe — no side effects, agent-friendly).</p>
+</div>
+
+<h2>2. Deterministic drivers (MoreComp)</h2>
+<table><tr><th>driver</th><th>what it does</th><th>class</th></tr>
+<tr><td>retrieval</td><td>Obsidian KB grep (<code>kb &lt;term&gt;</code>)</td><td>read</td></tr>
+<tr><td>ocr</td><td><code>ocridx</code> FTS5 search over an OCR index</td><td>read</td></tr>
+<tr><td>text-check</td><td>LanguageTool 6.6 grammar/typo</td><td>read</td></tr>
+<tr><td>translate</td><td>Argos NMT — offline es↔en</td><td>read</td></tr></table>
+<p>Every driver returns a frozen <code>{capability, args, context}</code> contract — no prose, no surprises.</p>
+
+<h2>3. Pricing (English-first, launch)</h2>
+<table><tr><th>Tier</th><th>Price</th><th>What you get</th></tr>
+<tr><td>Free</td><td>$0</td><td>rate-limited API + openapi.json, 1 driver</td></tr>
+<tr><td>Agent</td><td>$9/mo</td><td>full API, all 4 drivers, 10k calls/mo</td></tr>
+<tr><td>Fleet</td><td>custom</td><td>corporate: lexicon dumps, SLAs, self-host kits</td></tr></table>
+<p><a class="btn" href="https://buy.stripe.com/">Get an agent key — $9/mo</a></p>
+
+<h2>4. Why agents trust it</h2>
+<ul>
+<li><b>Deterministic:</b> drivers are read-class, output is schema-validated (no hallucinated tools).</li>
+<li><b>Offline:</b> the whole stack runs on a laptop — no vendor lock, no data exfiltration.</li>
+<li><b>MIT core:</b> the Rust core and this page's stack are open source (see the repo).</li>
+<li><b>Verifiable:</b> every release passes a dual adversarial audit (see the store).</li>
+</ul>
+<p style="margin-top:2em">Questions or a corporate pilot? <a href="contact.html">Contact Rex</a>.</p>
+</div></body></html>
