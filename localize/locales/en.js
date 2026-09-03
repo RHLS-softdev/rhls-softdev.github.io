@@ -1,4 +1,5 @@
 /* English pass by local model qwen2.5-3b 2026-09-02 (Rex workaround #10) — human review for CV proper nouns */
+/* English pass by local model qwen2.5-3b 2026-09-02 (Rex workaround #10) — human review for CV proper nouns */
 /* RHLS App Store catalog — cleaned rebuild 2026-09-01 (page-keyed, curated + MT). */
 window.__I18N_CATALOG__({
 
