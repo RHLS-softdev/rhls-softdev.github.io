@@ -1,3 +1,4 @@
+/* English pass by local model qwen2.5-3b 2026-09-02 (Rex workaround #10) — human review for CV proper nouns */
 /* RHLS App Store catalog — cleaned rebuild 2026-09-01 (page-keyed, curated + MT). */
 window.__I18N_CATALOG__({
 
@@ -122,7 +123,7 @@ window.__I18N_CATALOG__({
  'hub.auto.cv.bc32': '>Data:',
  'hub.auto.cv.bcc7': '>Code:',
  'hub.auto.cv.c379': '>RHLS',
- 'hub.auto.cv.c3b3': '>⬇ Descargar CV — Español (2025, PDF)',
+ 'hub.auto.cv.c3b3': '>⬇ Download CV — Spanish (2025, PDF)',
  'hub.auto.cv.c5f2': '>Privacy',
  'hub.auto.cv.cb54': '>Spanish',
  'hub.auto.cv.d5c0': '>10+ years of experience',
@@ -211,7 +212,7 @@ window.__I18N_CATALOG__({
  'hub.hero.title': 'The RHLS app store',
  'hub.lz.about.00fa': 'Localization portfolio',
  'hub.lz.about.0910': 'EN→ES localization specialist: Godot Engine documentation, Tofugu educational content, MinutePhysics AV, editorial review and QA.',
- 'hub.lz.about.0af1': 'Villahermosa traffic analysis with SUMO simulation — a public-interest study.',
+ 'hub.lz.about.0af1': 'Traffic analysis in Villahermosa with SUMO simulation — a public-interest study.',
  'hub.lz.about.11fc': 'Japanese culture',
  'hub.lz.about.210a': 'Current focus',
  'hub.lz.about.2d0c': 'yoji-apparel.printify.me',
@@ -270,7 +271,7 @@ window.__I18N_CATALOG__({
  'hub.lz.cv.2b0d': 'Managed end-to-end content workflows — creation, revision, publication — across digital platforms.',
  'hub.lz.cv.30d7': '— Professional working proficiency',
  'hub.lz.cv.3a08': 'Languages',
- 'hub.lz.cv.3bdb': 'El Glosario del Traductor · Villahermosa, Tabasco, Mexico (Hybrid) · Oct 2016 – Feb 2019',
+ 'hub.lz.cv.3bdb': 'Translator Glossary · Villahermosa, Tabasco, Mexico (Hybrid) · Oct 2016 – Feb 2019',
  'hub.lz.cv.416f': 'Professional experience',
  'hub.lz.cv.455a': 'Cross-Cultural Communication',
  'hub.lz.cv.463f': 'Designed and localized teaching materials in English, Spanish and Japanese for learners aged 7 to 60+.',
@@ -302,7 +303,7 @@ window.__I18N_CATALOG__({
  'hub.lz.cv.b524': 'Edited and localized articles on linguistics, audiovisual translation and non-Latin writing systems.',
  'hub.lz.cv.bc95': 'Spanish Interpreter (Remote)',
  'hub.lz.cv.c15f': '— Native',
- 'hub.lz.cv.c33a': '— Universidad Juárez Autónoma de Tabasco, MX · 2012 – 2017',
+ 'hub.lz.cv.c33a': 'Universidad Juárez Autónoma de Tabasco, MX · 2012 – 2017',
  'hub.lz.cv.c6f2': 'References on request: .',
  'hub.lz.cv.ccde': 'Language Educator (Multilingual)',
  'hub.lz.cv.cf67': 'Zoom, Google Meet, Microsoft Teams, Discord',
@@ -352,4 +353,42 @@ window.__I18N_CATALOG__({
  'hub.nav.store': 'Store',
  'hub.services.title': 'Subscribe',
  'hub.sites.title': 'Launch pages & docs',
+
+ 'hub.auto.about.151f': '>About me — Rex Hernández · teacher, translator, creator (RHLS App Store)',
+
+ 'hub.auto.about.6b32': '>Español · English · 日本語 · Italiano · Français · Português',
+
+ 'hub.auto.about.d31d': '>¡Hola, soy Rex!',
+
+ 'hub.auto.about.ec9c': '>Rex Hernández Language Services',
+
+ 'hub.auto.contact.0ed9': '>© 2026 Raciel Hernández Hernández · RHLS — Rex Hernández Language Services · rhls.softdev@gmail.com',
+
+ 'hub.auto.contact.8fec': '>Rex Hernández Language Services',
+
+ 'hub.auto.cv.0ed9': '>© 2026 Raciel Hernández Hernández · RHLS — Rex Hernández Language Services · rhls.softdev@gmail.com',
+
+ 'hub.auto.cv.fb59': '>CV / Résumé — Raciel Hernández (Rex) · localization specialist, translator, educator',
+
+ 'hub.auto.cv.feea': '>Raciel Hernández Hernández',
+
+ 'hub.auto.index.8570': '>RHLS App Store — Rex Hernández Language Services · download for Linux, Windows & Android',
+
+ 'hub.cv.h1': 'CV / Résumé',
+
+ 'hub.footer.legal': '© 2026 Raciel Hernández Hernández · RHLS — Rex Hernández Language Services · rhls.softdev@gmail.com',
+
+ 'hub.lz.about.6258': 'Community — Tabasco',
+
+ 'hub.lz.about.9f7f': 'YouTube — Rex Hernández Language Services',
+
+ 'hub.lz.about.e63f': 'Comuni Tab: working for a better Tabasco through local projects and analysis.',
+
+ 'hub.lz.contact.0a06': 'CV / Résumé: · ·',
+
+ 'hub.lz.cv.78b8': 'Rex Hernández Language Services · Remote · Jul 2014 – Present (transitioned from freelance to full-time business in May 2020)',
+
+ 'hub.lz.cv.8184': 'Universidad Juárez Autónoma de Tabasco — Cultural broadcasting department · Villahermosa, Tabasco, Mexico (Hybrid) · Mar 2018 – Jun 2018',
+
+ 'hub.lz.index.d309': 'Chén Báaxal spec',
 });
