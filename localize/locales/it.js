@@ -317,7 +317,7 @@ window.__I18N_CATALOG__({
  'hub.lz.cv.e989': 'Ha curato risorse multilingue per supportare l\\\'accessibilità e la comprensione interculturale.',
  'hub.lz.cv.ed98': 'Gestione terminologica',
  'hub.lz.cv.fe62': 'Lingua e cultura giapponese · 2012 – 2017',
- 'hub.lz.index.0001': 'Choir Director — Linux .deb (Windows e Android con la versione Rust)',
+ 'hub.lz.index.0001': 'Toscanini — Linux .deb (Windows e Android con la versione Rust)',
  'hub.lz.index.036a': 'Tutti gli installer sono su GitHub Releases: Linux .deb · Windows .exe · Android .apk · ZIP.',
  'hub.lz.index.132a': 'App Subtitle Toolkit — Ottieni Pro',
  'hub.lz.index.1f03': 'Lancio Ledgerly (+ app)',

@@ -183,7 +183,7 @@ window.__I18N_CATALOG__({
  'hub.auto.index.b883': 'Texupan — the six-language offline dictionary, your own copy, on your devices',
  'hub.auto.index.baaa': 'تفضل بزيارة KitchenOS',
  'hub.auto.index.bbaf': 'الاتصال',
- 'hub.auto.index.bce7': 'Visit Choir Director',
+ 'hub.auto.index.bce7': 'Visit Toscanini',
  'hub.auto.index.c2f7': 'Android (.apk)',
  'hub.auto.index.c379': 'RHLS',
  'hub.auto.index.c5f2': 'Privacy	(الخصوصية)',
@@ -317,7 +317,7 @@ window.__I18N_CATALOG__({
  'hub.lz.cv.e989': 'موارد متعددة اللغات منسقة لدعم إمكانية الوصول والفهم عبر الثقافات.',
  'hub.lz.cv.ed98': 'إدارة المصطلحات',
  'hub.lz.cv.fe62': 'اللغة والثقافة اليابانية · 2012 – 2017',
- 'hub.lz.index.0001': 'Choir Director — Linux .deb (ويندوز وأندرويد مع إصدار Rust)',
+ 'hub.lz.index.0001': 'Toscanini — Linux .deb (ويندوز وأندرويد مع إصدار Rust)',
  'hub.lz.index.036a': 'جميع ملفات التثبيت على GitHub Releases: Linux .deb · Windows .exe · Android .apk · ZIP.',
  'hub.lz.index.132a': 'تطبيق Subtitle Toolkit — احصل على Pro',
  'hub.lz.index.1f03': 'إطلاق Ledgerly (+ التطبيق)',
@@ -352,5 +352,4 @@ window.__I18N_CATALOG__({
  'hub.nav.store': 'المتجر',
  'hub.services.title': 'اشتراك',
  'hub.sites.title': 'صفحات الإطلاق والوثائق',
- 'meta.title': 'متجر تطبيقات RHLS — تطبيقات مجانية لينكس وويندوز وأندرويد',
 });
