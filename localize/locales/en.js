@@ -9,7 +9,7 @@ window.__I18N_CATALOG__({
  'hub.app.chenbaaxal.desc': 'Turns a 3D model into 2D sewing panels for plush toys and crafters — free to start.',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
  'hub.app.chenbaaxal.tag': 'Plush-toy pattern mapper',
- 'hub.app.choir.name': 'Choir Director (Toscanini)',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': 'Score viewer, playback, rehearsal projects',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': 'Kitchen management, offline-first',

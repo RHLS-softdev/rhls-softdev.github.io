@@ -7,7 +7,7 @@ window.__I18N_CATALOG__({
  'hub.app.chenbaaxal.desc': 'Transforme un modèle 3D en patrons de couture 2D pour peluches et créateurs — gratuit pour commencer.',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
  'hub.app.chenbaaxal.tag': 'Crée des patrons d\'animaux en peluche',
- 'hub.app.choir.name': 'Choir Director (Toscanini)',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': 'Lecteur de partitions, lecture, projets de répétition',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': 'Gestion de la cuisine, hors ligne en premier',

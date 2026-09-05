@@ -4,7 +4,7 @@ window.__I18N_CATALOG__({
  'hub.about.h1': '¡Hola, soy Rex!',
  'hub.about.nav': 'About me',
  'hub.about.whoami': 'Raciel Hernández (Rex) · language teacher · translator · creator',
- 'hub.app.choir.name': 'Choir Director（Toscanini）',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': '樂譜檢視、播放、排練項目',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': '離線優先嘅廚房管理',

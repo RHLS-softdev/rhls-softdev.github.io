@@ -7,7 +7,7 @@ window.__I18N_CATALOG__({
  'hub.app.chenbaaxal.desc': 'Convierte un modelo 3D en paneles de costura 2D para peluches y artesanos — gratis para empezar.',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
  'hub.app.chenbaaxal.tag': 'Asignador de patrones de peluche de juguete',
- 'hub.app.choir.name': 'Choir Director (Toscanini)',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': 'Visor de partituras, reproducción, ensayos',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': 'Gestión de cocina, offline-first',

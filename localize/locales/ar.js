@@ -7,7 +7,7 @@ window.__I18N_CATALOG__({
  'hub.app.chenbaaxal.desc': 'يحوّل نموذجًا ثلاثي الأبعاد إلى ألواح خياطة ثنائية الأبعاد لألعاب القطيفة والحرفيين — مجاني للبدء.',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
  'hub.app.chenbaaxal.tag': 'مخطط نمط الدمى القطيفة',
- 'hub.app.choir.name': 'Choir Director (Toscanini)',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': 'عارض النوتات، التشغيل، مشاريع التدريب',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': 'إدارة المطبخ، دون إنترنت أولاً',

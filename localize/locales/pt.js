@@ -7,7 +7,7 @@ window.__I18N_CATALOG__({
  'hub.app.chenbaaxal.desc': 'Transforma um modelo 3D em painéis de costura 2D para brinquedos de pelúcia e artesãos — grátis para começar.',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
  'hub.app.chenbaaxal.tag': 'Mapeador de padrões de brinquedos de pelúcia',
- 'hub.app.choir.name': 'Choir Director (Toscanini)',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': 'Visualizador de partituras, reprodução, projetos',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': 'Gestão de cozinha, offline-first',

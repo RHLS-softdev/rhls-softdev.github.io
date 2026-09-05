@@ -7,7 +7,7 @@ window.__I18N_CATALOG__({
  'hub.app.chenbaaxal.desc': '將 3D 模型轉換為絨毛玩偶與手作族的 2D 縫紉紙樣 — 免費開始使用。',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
  'hub.app.chenbaaxal.tag': '絨毛玩偶紙樣工具',
- 'hub.app.choir.name': 'Choir Director（Toscanini）',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': '樂譜檢視、播放、排練專案',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': '離線優先的廚房管理',

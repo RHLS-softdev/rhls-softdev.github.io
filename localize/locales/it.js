@@ -7,7 +7,7 @@ window.__I18N_CATALOG__({
  'hub.app.chenbaaxal.desc': 'Trasforma un modello 3D in cartamodelli di cucito 2D per peluche e artigiani — inizia gratis.',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
  'hub.app.chenbaaxal.tag': 'Crea cartamodelli per peluche',
- 'hub.app.choir.name': 'Choir Director (Toscanini)',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': 'Visualizzatore di spartiti, riproduzione, progetti',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': 'Gestione cucina, offline-first',

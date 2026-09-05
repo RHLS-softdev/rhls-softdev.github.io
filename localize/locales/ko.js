@@ -7,7 +7,7 @@ window.__I18N_CATALOG__({
  'hub.app.chenbaaxal.desc': '3D 모델을 2D 바느질 패널로 바꾸어 봉제 장난감과 공예가를 무료로 시작할 수 있습니다.',
  'hub.app.chenbaaxal.name': '첸바악살',
  'hub.app.chenbaaxal.tag': '봉제인형 패턴 메이커',
- 'hub.app.choir.name': 'Choir Director (Toscanini)',
+ 'hub.app.choir.name': 'Toscanini',
  'hub.app.choir.tag': '악보 뷰어, 재생, 연습 프로젝트',
  'hub.app.kitchen.name': 'KitchenOS',
  'hub.app.kitchen.tag': '오프라인 우선 주방 관리',
