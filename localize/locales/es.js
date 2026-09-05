@@ -210,7 +210,7 @@ window.__I18N_CATALOG__({
  'hub.hero.sub': 'Apps de idiomas, lectura, subtítulos, cocina y finanzas — todas gratis para empezar, con instaladores para Linux (.deb), Windows (.exe) y Android (.apk).',
  'hub.hero.title': 'La tienda de apps RHLS',
  'hub.lz.about.00fa': 'Cartera de localización',
- 'hub.lz.about.0910': '→ES ES especialista en localización: documentación de Godot Engine, contenido educativo de Tofugu, MinutePhysics AV, revisión editorial y QA.',
+ 'hub.lz.about.0910': 'Especialista en localización: documentación de Godot Engine, contenido educativo de Tofugu, MinutePhysics AV, revisión editorial y QA.',
  'hub.lz.about.0af1': 'Análisis de tráfico de Villahermosa con simulación SUMO — un estudio de interés público.',
  'hub.lz.about.11fc': 'Cultura japonesa',
  'hub.lz.about.210a': 'Enfoque actual',
