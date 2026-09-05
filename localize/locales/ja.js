@@ -6,7 +6,7 @@ window.__I18N_CATALOG__({
  'hub.about.whoami': 'Raciel Hernández (Rex) · language teacher · translator · creator',
  'hub.app.chenbaaxal.desc': '3 Dモデルをぬいぐるみや職人のための2 D縫製パネルに変えます—無料で始めることができます。',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
- 'hub.app.chenbaaxal.tag': 'Plush-toy pattern mapper',
+ 'hub.app.chenbaaxal.tag': 'ぬいぐるみ型紙メーカー',
  'hub.app.choir.name': 'Choir Director（Toscanini）',
  'hub.app.choir.tag': '楽譜ビューア、再生、練習プロジェクト',
  'hub.app.kitchen.name': 'KitchenOS',

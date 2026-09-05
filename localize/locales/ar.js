@@ -4,7 +4,7 @@ window.__I18N_CATALOG__({
  'hub.about.h1': '¡Hola, soy Rex!',
  'hub.about.nav': 'About me',
  'hub.about.whoami': 'Raciel Hernández (Rex) · language teacher · translator · creator',
- 'hub.app.chenbaaxal.desc': 'Turns a 3D model into 2D sewing panels for plush toys and crafters — free to start.',
+ 'hub.app.chenbaaxal.desc': 'يحوّل نموذجًا ثلاثي الأبعاد إلى ألواح خياطة ثنائية الأبعاد لألعاب القطيفة والحرفيين — مجاني للبدء.',
  'hub.app.chenbaaxal.name': 'Chén Báaxal',
  'hub.app.chenbaaxal.tag': 'مخطط نمط الدمى القطيفة',
  'hub.app.choir.name': 'Choir Director (Toscanini)',

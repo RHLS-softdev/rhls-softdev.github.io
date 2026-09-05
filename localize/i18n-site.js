@@ -24,6 +24,9 @@
   var STORAGE_KEY = "i18n-locale";
   var current = "en";
   var catalog = {};
+  var enCatalog = {}; // always-loaded English base: missing keys degrade to
+                      // English (not raw key strings) for partial locales
+                      // (hi/yue ship a subset — 2026-09-04 fix)
   var ready = [];
 
   function nearestTag(preferred) {
@@ -41,11 +44,21 @@
   function load(locale, done) {
     var s = document.createElement("script");
     s.src = "localize/locales/" + locale + ".js";
+    pendingLocale = locale;
     s.onload = function () { done(); };
-    s.onerror = function () { done(); }; // missing catalog -> English keys
+    s.onerror = function () { done(); }; // missing catalog -> English fallback
     document.head.appendChild(s);
   }
-  window.__I18N_CATALOG__ = function (data) { catalog = data || {}; };
+  var pendingLocale = null;
+  window.__I18N_CATALOG__ = function (data) {
+    var d = data || {};
+    // en.js registers as the English fallback base whenever it was the
+    // script being loaded (init always loads en first, and switchTo does
+    // too when no base is registered yet). Any other locale only replaces
+    // the active catalog.
+    if (pendingLocale === "en") enCatalog = d;
+    catalog = d;
+  };
 
   function apply() {
     document.documentElement.lang = current;
@@ -72,6 +85,8 @@
 
   function t(key) {
     if (catalog && Object.prototype.hasOwnProperty.call(catalog, key)) return catalog[key];
+    // partial-locale fallback: show the English value, never the raw key
+    if (enCatalog && Object.prototype.hasOwnProperty.call(enCatalog, key)) return enCatalog[key];
     return key;
   }
 
@@ -82,7 +97,13 @@
     var url = new URL(window.location.href);
     url.searchParams.set("lang", locale);
     history.replaceState(null, "", url.toString());
-    load(locale, apply);
+    // Always keep the English base registered (covers partial locales); the
+    // target locale's catalog overlays it when it finishes loading.
+    if (Object.keys(enCatalog).length === 0) {
+      load("en", function () { load(locale, apply); });
+    } else {
+      load(locale, apply);
+    }
   }
 
   function init(opts) {
@@ -93,7 +114,8 @@
     current = explicit && LOCALES[explicit] ? explicit : nearestTag(navigator.language || "en");
     if (opts && opts.onReady) ready.push(opts.onReady);
     if (opts && opts.renderSwitcher) opts.renderSwitcher(LOCALES, current, switchTo);
-    load(current, apply);
+    // Load English FIRST as the fallback base, then the target locale.
+    load("en", function () { load(current, apply); });
   }
 
   window.i18n = { init: init, t: t, switchTo: switchTo, locales: LOCALES, current: function () { return current; } };
