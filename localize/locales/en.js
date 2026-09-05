@@ -392,4 +392,10 @@ window.__I18N_CATALOG__({
  'hub.lz.cv.8184': 'Universidad Juárez Autónoma de Tabasco — Cultural broadcasting department · Villahermosa, Tabasco, Mexico (Hybrid) · Mar 2018 – Jun 2018',
 
  'hub.lz.index.d309': 'Chén Báaxal spec',
+ 'hub.lz.about.creator': '<strong>{e30b}</strong> I talk about the topics that interest me — mostly languages and their minutiae — and I also make documentaries about internet-culture topics, while getting into fiction.',
+ 'hub.lz.about.creator_body': 'I talk about the topics that interest me — mostly languages and their minutiae — and I also make documentaries about internet-culture topics, while getting into fiction.',
+ 'hub.lz.about.educator': '<strong>{dce7}</strong> I specialize in Japanese and English, and in the cultures that speak them — with historical and grammatical accuracy, and a high regard for my students\' learning.',
+ 'hub.lz.about.educator_body': 'I specialize in Japanese and English, and in the cultures that speak them — with historical and grammatical accuracy, and a high regard for my students\' learning.',
+ 'hub.lz.about.translator': '<strong>{e3c7}</strong> Technical and legal localization, mainly in the petroleum and artistic spheres, with experience in medical, narrative and poetic texts. My #1 priority is client satisfaction.',
+ 'hub.lz.about.translator_body': 'Technical and legal localization, mainly in the petroleum and artistic spheres, with experience in medical, narrative and poetic texts. My #1 priority is client satisfaction.',
 });

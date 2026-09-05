@@ -352,4 +352,10 @@ window.__I18N_CATALOG__({
  'hub.nav.store': 'Tienda',
  'hub.services.title': 'Suscripciones',
  'hub.sites.title': 'Páginas de lanzamiento y docs',
+ 'hub.lz.about.creator': '<strong>{e30b}</strong> Hablo de los temas que me interesan — sobre todo los idiomas y sus pormenores — y también hago documentales sobre temas de la cultura de internet, mientras incursiono en la ficción.',
+ 'hub.lz.about.creator_body': 'Hablo de los temas que me interesan — sobre todo los idiomas y sus pormenores — y también hago documentales sobre temas de la cultura de internet, mientras incursiono en la ficción.',
+ 'hub.lz.about.educator': '<strong>{dce7}</strong> Me especializo en japonés e inglés y en las culturas que los hablan, con precisión histórica y gramatical, y un gran respeto por el aprendizaje de mis estudiantes.',
+ 'hub.lz.about.educator_body': 'Me especializo en japonés e inglés y en las culturas que los hablan, con precisión histórica y gramatical, y un gran respeto por el aprendizaje de mis estudiantes.',
+ 'hub.lz.about.translator': '<strong>{e3c7}</strong> Localización técnica y jurídica, principalmente en los ámbitos petrolero y artístico, con experiencia en textos médicos, narrativos y poéticos. Mi prioridad número uno es la satisfacción del cliente.',
+ 'hub.lz.about.translator_body': 'Localización técnica y jurídica, principalmente en los ámbitos petrolero y artístico, con experiencia en textos médicos, narrativos y poéticos. Mi prioridad número uno es la satisfacción del cliente.',
 });

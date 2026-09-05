@@ -75,6 +75,18 @@
       var v = t(el.getAttribute("data-i18n"));
       if (v) el.textContent = v;
     });
+    // data-i18n-html: for rich containers whose value embeds child <strong>
+    // etc. Values are catalog-controlled (en/es authored), rendered as HTML.
+    // Placeholders {key} are resolved from the ACTIVE catalog first, then en.
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      var v = t(el.getAttribute("data-i18n-html"));
+      if (!v) return;
+      v = v.replace(/\{([\w.]+)\}/g, function (_, k) {
+        var inner = t(k);
+        return inner === k ? "" : inner; // drop unresolved placeholders
+      });
+      el.innerHTML = v;
+    });
     document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
       var v = t(el.getAttribute("data-i18n-placeholder"));
       if (v) el.setAttribute("placeholder", v);
